@@ -17,6 +17,7 @@ div {
   if(
      window.outerWidth - window.innerWidth > 20 || 
      window.outerHeight - window.innerHeight > 100){
+         document.write("断网？naive");
          document.location.href = "notexist/tooyoungtoosimple.html";
      }
 })();
@@ -26,6 +27,7 @@ div {
 var x = document.createElement('div');
   Object.defineProperty(x, 'id', {
       get:function(){
+          document.write("断网？naive");
           document.location.href = "notexist/tooyoungtoosimple.html";
       }
   });
